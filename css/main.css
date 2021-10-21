@@ -29,10 +29,10 @@ body {
   background-size: cover;
   height: 100vh;
   direction: rtl;
-  font-family: vazir;
 }
 
 .nav {
+  font-family: sahel;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -65,6 +65,7 @@ body {
 }
 
 .title {
+  font-family: sahel;
   text-align: start;
   margin-top: 50px;
   color: #fff;

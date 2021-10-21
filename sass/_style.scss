@@ -50,12 +50,12 @@ body {
     background-size: cover;
     height: 100vh;
     direction: rtl;
-    font-family: $font-vazir;
 }
 
 // ...............................end base...................................................
 // ...................................satart nav.....................................
 .nav {
+    font-family: $font-sahel;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -85,6 +85,7 @@ body {
 // ...................................end nav.....................................
 // ...................................satart main.....................................
 .title {
+    font-family: $font-sahel;
     text-align: start;
     margin-top: 50px;
     color: $color-white;
