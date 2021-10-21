@@ -50,6 +50,7 @@ body {
     background-size: cover;
     height: 100vh;
     direction: rtl;
+    font-family: $font-vazir;
 }
 
 // ...............................end base...................................................
@@ -83,6 +84,28 @@ body {
 
 // ...................................end nav.....................................
 // ...................................satart main.....................................
+.title {
+    text-align: start;
+    margin-top: 50px;
+    color: $color-white;
+    &-1 {
+        opacity: 60%;
+    }
+    &-btn {
+        .btn1 {
+            padding-left: 20px;
+            .date {
+                border-radius: 10px;
+            }
+        }
+        .btn2 {
+            .chose {
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
 // ...................................end main.....................................
 // .......................................start sidbar..............................
 .sidebar {
