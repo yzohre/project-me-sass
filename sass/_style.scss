@@ -1,0 +1,102 @@
+// ................................start base..........................................
+$color-black:#000;
+$color-1:#18120f;
+$color-2:#012F3B;
+$color-3:#5d5e60;
+$color-4:#959fa8;
+$color-white:#fff;
+$font-sahel: sahel;
+$font-nastaliq: Nastaliq;
+$font-vazir: vazir;
+@font-face {
+    font-family: sahel;
+    src: url("../fonts/Sahel.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Nastaliq;
+    src: url("../fonts/IranNastaliq.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'vazir';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Vazir-Bold.woff') format('truetype'), url('../fonts/Vazir-Bold.ttf'), url('../fonts/Vazir-Bold.eot');
+}
+
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%fullSpace {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $color-3;
+    background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)), url(../images/309831.jpg) center no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    direction: rtl;
+}
+
+// ...............................end base...................................................
+// ...................................satart nav.....................................
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    &-search {
+        padding-right: 30px;
+        opacity: 30%;
+        .search {
+            border-radius: 5px;
+            width: 575px;
+            height: 9vh;
+            padding: 20px;
+        }
+    }
+    .menu {
+        list-style: none;
+        &-link {
+            text-decoration: none;
+            color: $color-white;
+            margin-right: 30px;
+            &:hover {
+                color: $color-2;
+            }
+        }
+    }
+}
+
+// ...................................end nav.....................................
+// ...................................satart main.....................................
+// ...................................end main.....................................
+// .......................................start sidbar..............................
+.sidebar {
+    padding: 20px;
+    .brand {
+        width: 40px;
+        height: 40px;
+        color: $color-white;
+    }
+    &-2 {
+        width: 2px;
+        height: 35vh;
+        color: #fff;
+    }
+}
+
+// .......................................end sidbar..............................

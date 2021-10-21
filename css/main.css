@@ -1,0 +1,81 @@
+@font-face {
+  font-family: sahel;
+  src: url("../fonts/Sahel.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Nastaliq;
+  src: url("../fonts/IranNastaliq.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'vazir';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Vazir-Bold.woff") format("truetype"), url("../fonts/Vazir-Bold.ttf"), url("../fonts/Vazir-Bold.eot");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #5d5e60;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/309831.jpg) center no-repeat;
+  position: relative;
+  background-size: cover;
+  height: 100vh;
+  direction: rtl;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav-search {
+  padding-right: 30px;
+  opacity: 30%;
+}
+
+.nav-search .search {
+  border-radius: 5px;
+  width: 575px;
+  height: 9vh;
+  padding: 20px;
+}
+
+.nav .menu {
+  list-style: none;
+}
+
+.nav .menu-link {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+}
+
+.nav .menu-link:hover {
+  color: #012F3B;
+}
+
+.sidebar {
+  padding: 20px;
+}
+
+.sidebar .brand {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+
+.sidebar-2 {
+  width: 2px;
+  height: 35vh;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
