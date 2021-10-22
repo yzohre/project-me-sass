@@ -35,7 +35,8 @@ body {
   font-family: sahel;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
+  align-items: baseline;
 }
 
 .nav-search {
@@ -84,14 +85,18 @@ body {
 .title-btn .btn1 .date {
   border-radius: 10px;
   border: none;
+  width: 200px;
+  height: 44px;
 }
 
 .title-btn .btn2 .chose {
-  border-radius: 10px;
+  width: 200px;
+  height: 45px;
   border: none;
-  width: 180px;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 10px;
 }
 
 .box {
@@ -102,11 +107,16 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8px);
   border-radius: 5px;
+  padding-bottom: 20px;
+  width: 170px;
 }
 
 .box-title {
   text-align: center;
-  margin: 20px 0;
+}
+
+.box-title > h2 {
+  padding-bottom: 15px;
 }
 
 .box .title > p {

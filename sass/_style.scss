@@ -58,7 +58,8 @@ body {
     font-family: $font-sahel;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 0;
+    align-items: baseline;
     &-search {
         padding-right: 30px;
         // opacity: 30%;
@@ -101,19 +102,19 @@ body {
             .date {
                 border-radius: 10px;
                 border: none;
+                width: 200px;
+                height: 44px;
             }
         }
         .btn2 {
             .chose {
-                border-radius: 10px;
-                // opacity: 30%;
-                // filter: brightness(30%);
+                width: 200px;
+                height: 45px;
                 border: none;
-                // filter: blur(0.3px);
-                width: 180px;
-                // backdrop-filter: blur(10px)
                 background-color: rgba(255, 255, 255, 0.3);
                 backdrop-filter: blur(10px);
+                color: $color-white;
+                border-radius: 10px;
             }
         }
     }
@@ -127,9 +128,13 @@ body {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(8px);
     border-radius: 5px;
+    padding-bottom: 20px;
+    width: 170px;
     &-title {
         text-align: center;
-        margin: 20px 0;
+    }
+    &-title>h2 {
+        padding-bottom: 15px;
     }
     .title>p {
         opacity: 60%;
