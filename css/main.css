@@ -53,6 +53,18 @@ body {
   backdrop-filter: blur(8px);
 }
 
+@media (max-width: 1200px) {
+  .nav-search .search {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-search .search {
+    display: none;
+  }
+}
+
 .nav .menu {
   list-style: none;
 }
@@ -70,12 +82,17 @@ body {
 .title {
   font-family: sahel;
   text-align: start;
-  margin-top: 100px;
+  margin-top: 130px;
   color: #fff;
 }
 
 .title-1 {
   opacity: 60%;
+  margin-top: revert;
+}
+
+.title-btn {
+  margin-top: 20px;
 }
 
 .title-btn .btn1 {
@@ -102,12 +119,12 @@ body {
 .box {
   font-family: sahel;
   text-align: start;
-  margin-top: 50px;
+  margin-top: 80px;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8px);
   border-radius: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   width: 170px;
 }
 
@@ -119,7 +136,7 @@ body {
   padding-bottom: 15px;
 }
 
-.box .title > p {
+.box-title > p {
   opacity: 60%;
   text-align: center;
 }
@@ -158,23 +175,38 @@ body {
 }
 
 .sidebar {
-  padding: 20px;
-  height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sidebar .brand {
-  width: 40px;
-  height: 40px;
+.sidebar-1 .brand {
+  width: 60px;
+  height: 60px;
   color: #fff;
 }
 
 .sidebar-2 {
-  width: 2px;
+  width: 0.5px;
   height: 35vh;
-  color: #fff;
+  background-color: #fff;
+  opacity: 30%;
 }
 
-.sidebar-4 .pagenumber {
+.sidebar-3 .hamberger .a {
+  cursor: pointer;
+}
+
+.sidebar-4 {
+  width: 0.5px;
+  height: 35vh;
+  background-color: #fff;
+  opacity: 30%;
+}
+
+.sidebar-5 .pagenumber {
   position: relative;
   width: 3em;
   height: 3em;
@@ -183,7 +215,7 @@ body {
   opacity: 60%;
 }
 
-.sidebar-4 .pagenumber:before {
+.sidebar-5 .pagenumber:before {
   content: '';
   position: absolute;
   left: 20%;
@@ -194,14 +226,14 @@ body {
   transform: rotate(-30deg);
 }
 
-.sidebar-4 .pagenumber .current {
+.sidebar-5 .pagenumber .current {
   position: absolute;
   text-align: right;
   right: 1.5em;
   top: 0.5em;
 }
 
-.sidebar-4 .pagenumber .total {
+.sidebar-5 .pagenumber .total {
   position: absolute;
   left: 1.5em;
   bottom: 0.5em;

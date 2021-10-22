@@ -71,6 +71,12 @@ body {
             border: none;
             background-color: rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(8px);
+            @media (max-width: 1200px) {
+                width: 400px;
+            }
+            @media (max-width: 992px) {
+                display: none;
+            }
         }
     }
     .menu {
@@ -91,12 +97,14 @@ body {
 .title {
     font-family: $font-sahel;
     text-align: start;
-    margin-top: 100px;
+    margin-top: 130px;
     color: $color-white;
     &-1 {
         opacity: 60%;
+        margin-top: revert;
     }
     &-btn {
+        margin-top: 20px;
         .btn1 {
             padding-left: 20px;
             .date {
@@ -123,12 +131,12 @@ body {
 .box {
     font-family: $font-sahel;
     text-align: start;
-    margin-top: 50px;
+    margin-top: 80px;
     color: $color-white;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(8px);
     border-radius: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     width: 170px;
     &-title {
         text-align: center;
@@ -136,7 +144,7 @@ body {
     &-title>h2 {
         padding-bottom: 15px;
     }
-    .title>p {
+    &-title>p {
         opacity: 60%;
         text-align: center;
     }
@@ -174,19 +182,39 @@ body {
 // ...................................end main.....................................
 // .......................................start sidbar..............................
 .sidebar {
-    padding: 20px;
-    height: 100vh;
-    .brand {
-        width: 40px;
-        height: 40px;
-        color: $color-white;
+    padding: 15px;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-1 {
+        .brand {
+            width: 60px;
+            height: 60px;
+            color: $color-white;
+        }
     }
     &-2 {
-        width: 2px;
+        width: 0.5px;
         height: 35vh;
-        color: #fff;
+        background-color: $color-white;
+        opacity: 30%;
+    }
+    &-3 {
+        .hamberger {
+            .a {
+                cursor: pointer;
+            }
+        }
     }
     &-4 {
+        width: 0.5px;
+        height: 35vh;
+        background-color: $color-white;
+        opacity: 30%;
+    }
+    &-5 {
         .pagenumber {
             position: relative;
             width: 3em;
