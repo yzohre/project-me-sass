@@ -48,6 +48,7 @@ body {
   width: 575px;
   height: 9vh;
   padding: 20px;
+  border: none;
 }
 
 .nav .menu {
@@ -81,10 +82,16 @@ body {
 
 .title-btn .btn1 .date {
   border-radius: 10px;
+  border: none;
 }
 
 .title-btn .btn2 .chose {
   border-radius: 10px;
+  opacity: 30%;
+  filter: brightness(30%);
+  border: none;
+  filter: blur(0.3px);
+  width: 180px;
 }
 
 .sidebar {
